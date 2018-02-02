@@ -1,4 +1,5 @@
-build
+build/
 node_modules
 css/*.css
 Video/
+build/style.min.css

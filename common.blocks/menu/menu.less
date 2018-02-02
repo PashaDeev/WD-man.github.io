@@ -1,0 +1,62 @@
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.menu__item {
+	text-align: center;
+}
+
+.menu__link {
+	display: block;
+	margin: 0 auto;
+	width: 272px;
+	padding: 18px;
+
+	text-decoration: none;
+	font-family: "Akzidenz Grotesk Pro", "Arial", sans-serif;
+	font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1pt;
+
+  &:hover {
+  	background-color: #1b1b1b;
+  }
+}
+
+.menu__link::before {
+	display: block;
+	content: "";
+	width: 210px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 23px;
+}
+
+.menu__link--vusanty::before {
+	background: transparent url("img/visanty.png") no-repeat center bottom;
+}
+
+.menu__link--russia::before {
+	background: transparent url("img/russia.png") no-repeat center bottom;
+}
+
+.menu__link--revol::before {
+	background: transparent url("img/revol.png") no-repeat center bottom;
+}
+
+.menu__link--greec::before {
+	background: transparent url("img/greec.png") no-repeat center bottom;
+}
+
+.menu__link--japan::before {
+	background: transparent url("img/japan.png") no-repeat center bottom;
+}
+
+.menu__link--spb::before {
+	background: transparent url("../../img/spb.png") no-repeat center bottom;
+}
