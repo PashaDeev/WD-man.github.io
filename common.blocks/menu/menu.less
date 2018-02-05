@@ -17,11 +17,12 @@
 	text-decoration: none;
 	font-family: "Akzidenz Grotesk Pro", "Arial", sans-serif;
 	font-size: 14px;
+  line-height: 22px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1pt;
+  letter-spacing: 2pt;
 
   &:hover {
   	background-color: #1b1b1b;
@@ -59,4 +60,53 @@
 
 .menu__link--spb::before {
 	background: transparent url("../../img/spb.png") no-repeat center bottom;
+}
+
+@media (min-width: 1200px) {
+  .page-main {
+    width: 1200px;
+    padding-top: 40px;
+  }
+  
+  .page-main__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 819px;
+    margin: 0 auto;
+  }
+
+  .menu__link {
+    width: 270px;
+    height: 100%;
+
+    &::before {
+      height: 150px;
+    }
+  }
+
+  .menu__link--vusanty::before {
+    background-size: 79px auto;
+  }
+
+  .menu__link--russia::before {
+    background-size: 126px auto;
+  }
+
+   .menu__link--revol::before {
+    background-size: 200px auto;
+  }
+
+   .menu__link--greec::before {
+    background-size: 160px auto;
+  }
+
+   .menu__link--japan::before {
+    background-size: 160px auto;
+  }
+
+   .menu__link--spb::before {
+    background-size: 166px auto;
+  }
 }
