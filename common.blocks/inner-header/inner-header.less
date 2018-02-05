@@ -1,0 +1,33 @@
+
+.inner-header {
+  position: relative;
+  padding-bottom: 115px;
+  padding-top: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 190px;
+    height: 148px;
+
+    transform: translatex(-50%);
+
+    background-image: url("img/inner-header-sanct.png");
+    background-color: transparent;
+  }
+}
+
+.inner-header__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Akzidenz-Grotesk Pro Ext XBold", "Arial", sans-serif;
+  font-size: 52px;
+  line-height: 81px;
+  text-align: center;
+
+  transform: rotate(-90deg);
+}
