@@ -2,5 +2,6 @@ node_modules
 css/*.css
 Video/
 build/style.min.css
-build/
+/build/
 build/**/*
+build/index.html
