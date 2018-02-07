@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Akzidenz-Grotesk Pro Regular", "Arial", sans-serif;
+  font-family: "Akzidenz-Grotesk Pro Regular";
   src: url("fonts/AkzidenzGroteskPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akzidenz-Grotesk Pro Medium", "Arial", sans-serif;
+  font-family: "Akzidenz-Grotesk Pro Medium";
   src: url("fonts/AkzidenzGroteskPro-Md.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akzidenz Grotesk Pro Bold", "Arial", sans-serif;
-  src: url("fonts/AkzidenzGroteskPro-Bold.woff") format("woff");
+  font-family: "Akzidenz Grotesk Pro Bold";
+  src: url("/fonts/AkzidenzGroteskPro-Bold.woff2") format("woff2"),url("fonts/AkzidenzGroteskPro-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akzidenz-Grotesk Pro Ext XBold", "Arial", sans-serif;
+  font-family: "Akzidenz-Grotesk Pro Ext XBold";
   src: url("fonts/AkzidenzGroteskPro-BoldEx.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -56,5 +56,24 @@
   background-color: #000;
 
   box-sizing: border-box;
-}
+  
+  @media (min-width: 1200px) {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 140px;
+      z-index: 2;
+
+      width: 294px;
+      height: 455px;
+      overflow: hidden;
+
+
+      background-image: url("img/inner-header-sanct-desktop.png");
+      background-color: transparent;
+      background-repeat: no-repeat;
+    }
+    }
+  }
 
