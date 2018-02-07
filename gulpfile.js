@@ -39,10 +39,10 @@ gulp.task('style', function() {
 	gulp.src('style.less')
 	.pipe(plumber())
 	.pipe(less())
-	.pipe(gulp.dest('css'))
+	.pipe(gulp.dest(params.out+'/css'))
 	.pipe(cssmin())
 	.pipe(rename('style.min.css'))
-	.pipe(gulp.dest(params.out))
+	.pipe(gulp.dest(params.out+'/css'))
 	.pipe(reload({ stream: true }));
 });
 
