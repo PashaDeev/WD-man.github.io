@@ -1,0 +1,103 @@
+.popup {
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+
+  width: 320px;
+  padding: 10px;
+
+
+  background-color: #000;
+}
+
+.popup__video {
+  width: 296px;
+  height: auto;
+}
+
+.popup__text {
+  font-family: "Akzidenz-Grotesk Pro Medium", "Arial", sans-serif;
+  font-size: 7px;
+  line-height: 8px;
+  font-weight: 400;
+}
+
+.popup__close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+
+    width: 7px;
+    height: 1px;
+
+    background-color: #fff;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 4px;
+
+    width: 7px;
+    height: 1px;
+
+    background-color: #fff;
+
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup {
+    top: 5px;
+
+    width: 920px;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .popup__video {
+    width: 837px;
+    height: auto;
+  }
+
+  .popup__text {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .popup__close {
+    top: 15px;
+    right: 15px;
+
+    &::before {
+      width: 12px;
+      height: 2px;
+    }
+
+    &::after {
+      width: 12px;
+      height: 2px;
+    }
+  }
+}
