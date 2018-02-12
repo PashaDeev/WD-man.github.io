@@ -37,7 +37,33 @@
     width: 20px;
     height: 20px;
 
-    background-color: #f09e46;
+    background-color: transparent;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+.books-content__links--text {
+  &::before {
+    background-image: url("../img/text.png");
+  }
+}
+
+.books-content__links--video {
+  &::before {
+    background-image: url("../img/video.png");
+  }
+}
+.books-content__links--music {
+  &::before {
+    background-image: url("../img/music.png");
+  }
+}
+
+.books-content__links--cube {
+  &::before {
+    background-image: url("../img/cube.png");
   }
 }
 
